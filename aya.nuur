@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wish List</title>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF6F0; /* беж aesthetic */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #3E3A36;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+
+  h1 {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+  }
+
+  .card {
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    padding: 28px 22px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  }
+
+  .emoji {
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6F6660;
+    margin: 0;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 12px;
+    color: #9B938C;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>W I S H  L I S T</h1>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="emoji">📷</div>
+      <h2>Canon Camera</h2>
+      <p>
+        Для эстетичного контента, фото и видео.  
+        Творчество, работа и личный бренд.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">📱</div>
+      <h2>iPad Pro</h2>
+      <p>
+        Для обучения, планирования, заметок  
+        и красивой повседневной работы.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="emoji">✏️</div>
+      <h2>Apple Pencil</h2>
+      <p>
+        Для рисования, идей, визуалов  
+        и комфортной работы.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    aesthetic mood 🤍
+  </div>
+
+</div>
+
+</body>
+</html>
